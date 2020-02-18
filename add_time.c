@@ -19,11 +19,11 @@ int add_time(int *hour, int *min, int *sec, int add_sec){
 	*sec = *sec + add_sec;
 	if(*sec >= 60){
 		*sec = *sec - 60;
-		*min++;
+		(*min)++;
 	}
 	if(*min >= 60){
 		*min = *min - 60;
-		*hour++;
+		(*hour)++;
 	}
 	if(*hour >= 24){
 		*hour = *hour - 24;
